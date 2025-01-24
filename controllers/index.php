@@ -28,7 +28,7 @@ $fileListHtml = '';
 if (!empty($files) && is_array($files)) {
 	foreach ($files as $file) {
 		// Créez une liste avec des liens pour télécharger chaque fichier
-		$fileListHtml .= '<li><a href="uploads/' . htmlspecialchars($file['fichier']) . '" télécharger>' . htmlspecialchars($file['fichier']) . '</a></li>';
+		$fileListHtml .= '<li><a href="uploads/' . htmlspecialchars($file['fichier']) . '" download>' . htmlspecialchars($file['fichier']) . '</a></li>';
 	}
 } else {
 	 // Si aucun fichier n'est disponible, afficher un message
